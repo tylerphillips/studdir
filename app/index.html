@@ -45,11 +45,11 @@
 
                 <script type="text/template" id="grid-template">
 
-                    <span class="firstname"><%= item.get('firstName') %></span>
-                    <h2><%= item.get('lastName') %></h2>
-                    <h2><%= item.get('phone') %></h2>
-                    <h3><%= item.get('email') %></h3>
-                    <a href="http://github.com/<%= item.get('github') %>"><%= item.get('github') %></a>
+                    <span class="firstname"><%= student.get('firstName') %></span>
+                    <h2><%= student.get('lastName') %></h2>
+                    <h2><%= student.get('phone') %></h2>
+                    <h3><%= student.get('email') %></h3>
+                    <a href="http://github.com/<%= student.get('github') %>"><%= student.get('github') %></a>
                     <p></p>
                     <button type="submit" class="btn btn-default edit">Edit</button>
                     <button type="submit" class="btn btn-default delete">Delete</button>
@@ -59,15 +59,15 @@
               
 
                 <script type="text/template" id="full-template">
-                    <span class="firstname"><%= item.get('firstName') %></span>
-                    <h2><%= item.get('lastName') %></h2>
-                    <h3><%= item.get('phone') %></h3>
+                    <span class="firstname"><%= student.get('firstName') %></span>
+                    <h2><%= student.get('lastName') %></h2>
+                    <h3><%= student.get('phone') %></h3>
                     <p>Github Profile</p>
-                    <a href="http://github.com/<%= item.get('github') %>"><%= item.get('github') %></a>
+                    <a href="http://github.com/<%= student.get('github') %>"><%= student.get('github') %></a>
                     <p></p>
-                    <p><%= item.get('email') %></p>
+                    <p><%= student.get('email') %></p>
                     
-                    <a href="#/items/<%= item.get('id') %>"><img src="<%= item.get('photo') %>" class="large-avatar">
+                    <a href="#/students/<%= student.get('id') %>"><img src="<%= student.get('photo') %>" class="large-avatar">
 
                 </script>
                 

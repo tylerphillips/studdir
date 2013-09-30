@@ -1,26 +1,26 @@
 AppRouter = Backbone.Router.extend({
 
   initialize: function(){
-    this.items = new ItemsCollection()
-    this.items.add(  user  )
+    this.students = new StudentsCollection()
+    this.students.add(  user  )
   },
 
   routes: {
     "about"     : "about",
-    "items"     : "showItems",
-    "items/:id" : "showItem"
+    "students"     : "showStudents",
+    "students/:id" : "showStudent"
   },
 
-  showItems: function(){
+  showStudents: function(){
     $('.container').html('')
-    this.items = new ItemsCollection()
-    this.items.add(  user  )
+    this.students = new StudentsCollection()
+    this.students.add(  user  )
   },
 
-  showItem: function(id) {
+  showStudent: function(id) {
     $('.container').html('')
-    var itemToShow = this.items.get(id)
-    new FullItemView({model: itemToShow})
+    var studentToShow = this.students.get(id)
+    new FullStudentView({model: studentToShow})
   }
 
 })

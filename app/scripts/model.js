@@ -1,17 +1,17 @@
-Item = Backbone.Model.extend({
+Student = Backbone.Model.extend({
   initialize: function(){
   }
 })
 
-ItemsCollection = Backbone.Collection.extend({
+StudentsCollection = Backbone.Collection.extend({
   initialize: function(){
 
-    this.on('add', function(item){
-      new GridItemView( {model: item} )
+    this.on('add', function(student){
+      new GridStudentView( {model: student} )
     })
   },
 
-  model: Item
+  model: Student
 })
 
 
@@ -20,7 +20,6 @@ var user = [
     firstName: 'Tyler',
     lastName: 'Phillips',
     id: 'tyler',
-    // phone: '864.380.8131',
     email: 'tylerfphillips@gmail.com',
     github: 'tylerphillips',
     photo: 'https://1.gravatar.com/avatar/f036b006d9a9ef19dc02a75a28defb53?d=https%3A%2F%2Fidenticons.github.com%2F6bbbe379ea34bb31d3e52ed80a1bc43d.png&s=400'
@@ -31,7 +30,6 @@ var user = [
     firstName: 'Daniel',
     lastName: 'Jeffords',
     id: 'dan',
-    // phone: '864.640.5321',
     email: 'daniel.jeffords@gmail.com', 
     github: 'tylerphillips',
     photo: 'http://image.shutterstock.com/display_pic_with_logo/332257/332257,1291233136,41/stock-photo-male-opera-singer-hold-skeleton-in-full-singing-mode-on-isolated-white-background-illustration-66352207.jpg'
