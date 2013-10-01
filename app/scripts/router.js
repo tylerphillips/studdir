@@ -6,7 +6,6 @@ AppRouter = Backbone.Router.extend({
   },
 
   routes: {
-    "about"     : "about",
     "students"     : "showStudents",
     "students/:id" : "showStudent"
   },

@@ -24,11 +24,13 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
+                    <!-- <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                    <li><input id="add-input" placeholder="Add New Student"></li>
                 </ul>
-                <h3 class="text-muted">Trying to Learn Backbone</h3>
+                <img src="app/images/IrYdLogo.png">
+                <h3 class="text-muted">IronYard Student Directory</h3>
             </div>
 
 
@@ -58,10 +60,13 @@
                 <div class='github-full'><a href="http://github.com/<%= student.get('github') %>"><%= student.get('github') %></a><div>
                 <div class='email-full'><p><%= student.get('email') %></p></div>
                 <a href="#/students/<%= student.get('id') %>"><img src="<%= student.get('photo') %>" class="grav-image-full ">
-                <button type="submit" id="btn btn-default edit">Edit</button>
-                <button type="submit" class="btn btn-default delete">Delete</button>
+                // <button type="submit" id="btn btn-default edit">Edit</button>
+                // <button type="submit" id="btn btn-default delete">Delete</button>
             </script>
+
+
         </div>
+         
 
                 
         </div>

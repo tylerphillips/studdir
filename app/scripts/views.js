@@ -23,38 +23,119 @@ FullStudentView = Backbone.View.extend({
 
   className: 'student-full',
 
-  initialize: function(){
-    $('.container').append(this.el)
-    this.render()
-  },
-
-  render: function(){
-    this.$el.append( this.template({student: this.model }) )
-  }  
-})
-
-EditStudentView = Backbone.View.extend({
-  
-  template: _.template( $('#edit-template').text() ),
-
-  className: 'student-edit',
-
   events: {
-    "click #delete": "destroy",
-    "click #edit": "edit"
+    "click #edit" : "edit",
+    "click #delete" : "destroy",
+    "click #save" : "save"
   },
 
   initialize: function(){
     $('.container').append(this.el)
-    $(this.el).text(this.model.get("firstname"))
     this.render()
-
   },
 
   render: function(){
     this.$el.append( this.template({student: this.model }) )
-  }  
-})
+  },  
+
+  edit: function() {
+    $('.person-view').html('');
+    var editTemplate = _.template($("#edit-template").text());
+    this.$el.append(editTemplate({student: this.model}) );
+  },
+
+  destroy: function() {
+    this.remove();
+  },
+
+  // save: function() {
+  //   var editedName = this.$el.find('input#name').val();
+  //   var editedEmail = this.$el.find('input#email').val();
+  //   var editedGithub = this.$el.find('input#github').val();
+
+  //   this.model.set('name', editedName);
+  //   this.model.set('email', editedEmail);
+  //   this.model.set('github', editedGithub);
+
+  //   this.render();
+  // }
+
+});
+
+// EditStudentView = Backbone.View.extend({
+  
+//   template: _.template( $('#edit-template').text() ),
+
+//   className: 'edit-full',
+
+//   events: {
+//     "click #edit" : "edit",
+//     "click #delete" : "destroy",
+//     "click #save" : "save"
+//   },
+
+//   initialize: function(){
+//     $('.container').append(this.el)
+//     this.render()
+//   },
+
+//   render: function(){
+//     this.$el.append( this.template({student: this.model }) )
+//   },  
+
+//   edit: function() {
+//     $('.person-view').html('');
+//     var editTemplate = _.template($("#edit-template").text());
+//     this.$el.append(editTemplate({student: this.model}) );
+//   },
+
+//   destroy: function() {
+//     this.remove();
+//   },
+
+//   save: function() {
+//     var editedName = this.$el.find('input#name').val();
+//     var editedEmail = this.$el.find('input#email').val();
+//     var editedGithub = this.$el.find('input#github').val();
+
+//     this.model.set('name', editedName);
+//     this.model.set('email', editedEmail);
+//     this.model.set('github', editedGithub);
+
+//     this.render();
+//   }
+
+// })
+
+// EditStudentView = Backbone.View.extend({
+  
+//   template: _.template( $('#edit-template').text() ),
+
+//   className: 'student-edit',
+
+//   events: {
+//     "click #edit" : "edit",
+//     "click #delete" : "destroy",
+//     "click #save" : "save"
+//   },
+
+//   initialize: function(){
+//     $('.container').append(this.el)
+//     $(this.el).text(this.model.get("firstname"))
+//     this.render()
+
+//   },
+
+//   render: function(){
+//     this.$el.append( this.template({student: this.model }) )
+//   },  
+
+//   edit: function() {
+//     $('.person-view').html('');
+//     var editTemplate = _.template($("#edit-template").text());
+//     this.$el.append(editTemplate({student: this.model}) );
+//   },
+// })
 
 // make a PersonView constructor
 // PersonView = Backbone.View.extend({
