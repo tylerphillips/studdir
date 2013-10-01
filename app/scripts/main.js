@@ -1,57 +1,13 @@
-// Item = Backbone.Model.extend({
-//   initialize: function(){
-//     console.log('new item created!')
-//   }
-// })
+// function (){
+//   $.post('http://0.0.0.0:3000/collections/iystudents', {
+//   firstName: 'Tyler',
+//   lastName: 'Phillips',
+//   id: 'tyler',
+//   email: 'tylerfphillips@gmail.com',
+//   github: 'tylerphillips', 
+//   photo:'https://1.gravatar.com/avatar/f036b006d9a9ef19dc02a75a28defb53?d=https%3A%2F%2Fidenticons.github.com%2F6bbbe379ea34bb31d3e52ed80a1bc43d.png&s=400'
+// });
 
-// ItemsCollection = Backbone.Collection.extend({
-//   initialize: function(){
-//     console.log('new collection created!')
-
-//     this.on('add', function(item){
-//       new GridItemView( {model: item} )
-//     })
-//   },
-
-//   model: Item
-// })
-
-// var data = [
-//   {
-//     name: 'Pie',
-//     id: 'pie',
-//     price: 65,
-//     description: 'So good'
-//   },
-  // {
-  //   name: 'Food',
-  //   id: 'food',
-  //   price: 45,
-  //   description: 'Eatable!'
-  // },
-  // {
-  //   name: 'Beer',
-  //   id: 'beer',
-  //   price: 15,
-  //   description: 'Better than Food!'
-  // },
-  // {
-  //   name: 'Beef Stroganov',
-  //   id: 'beef-stroganov',
-  //   price: 17,
-  //   description: 'Melty. Get\'s smelly after four days'
-  // },
-  // {
-  //   name: 'Car',
-  //   id: 'car',
-  //   price: 1,
-  //   description: 'Goes fast'
-  // },
-  // {
-  //   name: 'Coffee Flavor ☃',
-  //   id: 'cofee-flavor',
-  //   price: 9001,
-  //   description: 'Mystery'
-  // }
-// ]
-
+// $.ajax({type:'PUT', 
+//         url:'http://0.0.0.0:3000/collections/coolguys/5249faa17fdfd50709000025', 
+//         data: {firstName: 'Logan'}})

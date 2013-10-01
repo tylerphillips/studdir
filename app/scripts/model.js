@@ -16,6 +16,28 @@ StudentsCollection = Backbone.Collection.extend({
 
 
 var user = [
+
+
+  {
+    firstName: 'Mason',
+    lastName: 'Stewart',
+    id: 'mason',
+    email: 'masondesu@theironyard.com',
+    github: 'masondesu',
+    photo: 'https://2.gravatar.com/avatar/091bc95204caaf52b0d299bd9ac59540?d=https%3A%2F%2Fidenticons.github.com%2F4373bf90ad58c8e2f43bec7394a4aade.png&s=400'
+
+  },
+
+  {
+    firstName: 'Eric',
+    lastName: 'Dodds',
+    id: 'dodds',
+    email: 'ericdodds@theironyard.com',
+    github: 'ericdodds',
+    photo: 'https://1.gravatar.com/avatar/decdfffd46013c1d5940b689d0bb4cf1?d=https%3A%2F%2Fidenticons.github.com%2F28281e400bf79e37d4f21c9a91587157.png&s=400'
+
+  },  
+
   {
     firstName: 'Tyler',
     lastName: 'Phillips',
@@ -23,20 +45,19 @@ var user = [
     email: 'tylerfphillips@gmail.com',
     github: 'tylerphillips',
     photo: 'https://1.gravatar.com/avatar/f036b006d9a9ef19dc02a75a28defb53?d=https%3A%2F%2Fidenticons.github.com%2F6bbbe379ea34bb31d3e52ed80a1bc43d.png&s=400'
-
   },
 
-{
+  {
     firstName: 'Daniel',
     lastName: 'Jeffords',
     id: 'dan',
     email: 'daniel.jeffords@gmail.com', 
-    github: 'tylerphillips',
+    github: 'DJSrA',
     photo: 'http://image.shutterstock.com/display_pic_with_logo/332257/332257,1291233136,41/stock-photo-male-opera-singer-hold-skeleton-in-full-singing-mode-on-isolated-white-background-illustration-66352207.jpg'
-},
+  },
 
 
-   {
+  {
     firstName: 'Caleb',
     lastName: 'Bradley',
     id: 'caleb-bradley',
@@ -146,3 +167,5 @@ var user = [
 
   }
 ];
+
+// $.post('http://0.0.0.0:3000/collections/coolguys', {firstName: 'Tyler Phillips',lastName: 'Phillips',id: 'tyler',email: 'fylerfphillips@gmail.com',github: 'tylerphillips', photo:'https://1.gravatar.com/avatar/f036b006d9a9ef19dc02a75a28defb53?d=https%3A%2F%2Fidenticons.github.com%2F6bbbe379ea34bb31d3e52ed80a1bc43d.png&s=400'})
