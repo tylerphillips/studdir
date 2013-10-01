@@ -39,7 +39,7 @@ FullStudentView = Backbone.View.extend({
   },  
 
   edit: function() {
-    $('.person-view').html('');
+    $('.student-full').html('');
     var editTemplate = _.template($("#edit-template").text());
     this.$el.append(editTemplate({student: this.model}) );
   },
