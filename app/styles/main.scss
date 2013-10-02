@@ -111,7 +111,8 @@ body {
     height: 130px;
     width: 340px;
     border-radius: 4px;
-    border: 5px solid #5cb85c;;
+    border: 5px solid #517051;;
+    // border: 5px solid #5cb85c;;
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 0px;
@@ -133,7 +134,7 @@ body {
     height: 130px;
     width: 340px;
     border-radius: 4px;
-    border: 5px solid #f39200;
+    border: 5px solid #517051;
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 0px;
@@ -188,7 +189,8 @@ body {
     position: absolute;
     margin-left: 130px;
     margin-top: 63px;
-    color: #5cb85c;
+    color: #517051;
+    // color: #5cb85c;
 }
 .email-grid {
     font-size: 30px;
@@ -234,8 +236,48 @@ h2 {
     width: 100px;
 }
 
-
-
+.student-full {
+    background-color: #517051;
+    border: solid 3px rgb(243, 146, 0);
+}
+.full-header {
+    font-family: 'Days One', sans-serif;
+    background-color: rgb(243, 146, 0);
+    color: #517051;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    box-shadow: inset 4px 4px white, inset -4px -4px white, inset 4px -4px white, 0px 0px white;
+    border: solid;
+}
+.firstname-full {
+    font-family: 'Days One', sans-serif;
+    font-size: 55px;
+    letter-spacing: 3px;
+    // background-color: #517051;
+}
+.lastname-full {
+    margin-top: -15px;
+    font-family: 'Days One', sans-serif;
+    font-size: 30px;
+    padding-bottom: 5px;
+    // background-color: #517051;
+}
+.grav-image-full {
+    background-color: rgb(243, 146, 0);
+    padding: 10px;
+    border: solid 4px white;
+}
+.grav-image-full-out {
+    padding: 10px;
+}
+.github-full {
+    color: white;
+}
+.git-label {
+    margin-top: 15px;
+}
+.email-label {
+    margin-top: 15px;
+}
 
 
 
