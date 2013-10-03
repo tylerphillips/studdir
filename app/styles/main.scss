@@ -95,7 +95,8 @@ body {
 }
 
 body {
-    background: #fafafa;
+    // background: #3F463F;
+    background: #F1EFEA;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
@@ -107,7 +108,7 @@ body {
 .student-grid-unit {
     position: relative;
     color: black;
-    background: white;
+    background: #F1EFEA;
     height: 130px;
     width: 340px;
     border-radius: 4px;
@@ -130,7 +131,7 @@ body {
 .student-grid-unit:hover {
     position: relative;
     color: black;
-    background: white;
+    background: #3F463F;
     height: 130px;
     width: 340px;
     border-radius: 4px;
@@ -223,17 +224,42 @@ h2 {
     font-family: 'Days One', sans-serif;
 }
 
-.header h3 {
+.header {
+    margin-top: 5px;
+    padding-left: 108px;
     display: inline-block;
+    font-family: 'Days One', sans-serif;
+    // color: #517051;
+    color: #3F463F;
 }
 
-.directory {
+.text-muted {
+    font-size: 40px;
     display: inline-block;
+    font-family: 'Days One', sans-serif;
+    // color: #517051;
+    color: #3F463F;
+}
+.head-student {
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Days One', sans-serif;
+}
+.directory {
+    position: relative;
+    top: -25px;
+    font-size: 40px;
+    margin-left: 138px;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: -13px;
+
 }
 
 .ironyardlogo {
+    position: relative;
     display: inline-block;
     width: 100px;
+    top: -13px;
 }
 
 .student-full {

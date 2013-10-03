@@ -31,61 +31,57 @@
                     <li></li>
 
                 </ul>
+                
+                <div class="text-muted">IronYard</div> 
                 <img src="https://github.com/tylerphillips/studdir/blob/master/app/images/IrYdLogo.png?raw=true" class="ironyardlogo">
-                <h3 class="text-muted">IronYard</h3> 
-                <h3 class="directory">Student Directory</h3>         
+                <div class="head-student">Student</div>  
+                <p class="directory">Directory</p>        
             </div>
 
-            <!-- Add New Student Template -->
-            <script type="text/template" id="add-template">
-                <input id="student-firstName" placeholder='First Name'>
-                <input id="email" placeholder='Email'>
-                <input id="github" placeholder='Github account'>
-                <button type="button" id="add" class="btn btn-default">Add student</button>
-            </script>
 
-            <!-- <div class="jumbotron">
-                <h1>StudDir</h1>
-                <p class="lead">We Keep Your Contacts</p>
-                <a class="btn btn-lg btn-success" href="http://www.youtube.com/watch?v=PaEnaoydUUo">Splendid!</a>
-            </div> -->
-            <input id="add-input" placeholder="Add New Student">
+             <!-- <div class="jumbotron">
+            //     <h1>StudDir</h1>
+            //     <p class="lead">We Keep Your Contacts</p>
+            //     <a class="btn btn-lg btn-success" href="http://www.youtube.com/watch?v=PaEnaoydUUo">Splendid!</a>
+            // </div> -->
+            <!-- <input id="add-input" placeholder="Add New Student"> -->
+
 
             <div class="homework">
-
-            <!-- Grid View Template -->
-            <script type="text/template" id="grid-template">
-                <a href="#/students/<%= student.get('id') %>">
-                <img src="<%= student.get('photo') %>" class="grav-image-grid">
-                <div class="firstname-grid"><%= student.get('firstName') %></div>
-                <div class='lastname-grid'><%= student.get('lastName') %></div>
-            </script>
+                <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
             
-            <!-- Indiviual/Full Student View Template -->
-            <script type="text/template" id="full-template">
-                <div class="full-header">
-                    <div class="firstname-full"><%= student.get('firstName') %></div>
-                    <div class='lastname-full'><%= student.get('lastName') %></div>
-                </div>
-
-                
-                
-                <div class='github-full'>
-                <p class="git-label">Github Profile</p>
-                <a href="http://github.com/<%= student.get('github') %>"><%= student.get('github') %></a><div>
-                <div class='email-full'>
-                <p class="email-label">Email</p>
-                <p><%= student.get('email') %></p></div>
-                <div class="grav-image-full-out"><a href="#/students/<%= student.get('id') %>"><img src="<%= student.get('photo') %>" class="grav-image-full ">
-                </div>
-                <button type="submit" id="btn btn-default edit">Edit</button>
-                <button type="submit" id="btn btn-default delete">Delete</button>
-            </script>
-
-            </div>
-                         
+            </div>       
         </div>
+        
+        <!-- Grid View Template -->
+        <script type="text/template" id="grid-template">
+            <a href="#/students/<%= student.get('id') %>">
+            <img src="<%= student.get('photo') %>" class="grav-image-grid">
+            <div class="firstname-grid"><%= student.get('firstName') %></div>
+            <div class='lastname-grid'><%= student.get('lastName') %></div>
+        </script>
 
+        <!-- Indiviual/Full Student View Template -->
+        <script type="text/template" id="full-template">
+            <div class="full-header">
+                <div class="firstname-full"><%= student.get('firstName') %></div>
+                <div class='lastname-full'><%= student.get('lastName') %></div>
+            </div>
+            <div class='github-full'>
+            <p class="git-label">Github Profile</p>
+            <a href="http://github.com/<%= student.get('github') %>"><%= student.get('github') %></a><div>
+            <div class='email-full'>
+            <p class="email-label">Email</p>
+            <p><%= student.get('email') %></p></div>
+            <div class="grav-image-full-out"><a href="#/students/<%= student.get('id') %>"><img src="<%= student.get('photo') %>" class="grav-image-full ">
+            </div>
+            <button type="submit" id="btn btn-default edit">Edit</button>
+            <button type="submit" id="btn btn-default delete">Delete</button>
+        </script>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

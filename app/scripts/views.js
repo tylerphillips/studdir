@@ -62,6 +62,42 @@ FullStudentView = Backbone.View.extend({
 
 });
 
+AddPersonView = Backbone.View.extend({
+  addTemplate: _.template($('#add-template').text()),
+
+  el: '.container-add',
+
+  events: {
+    "click #add": "addPerson"
+  },
+
+  initialize: function(){
+    console.log('added input field')
+    this.render();
+  },
+
+  render: function () {
+    this.$el.empty();
+    this.$el.append(this.addTemplate()).css({'background-color':'#1187E4'});
+  },
+
+  addPerson: function() {
+    var newName = $('input#first-name').val();
+    var newEmail = $('input#student-email').val();
+    var newGithub = $('input#student-github').val();
+
+    var newClassmate = new Student();
+    newClassmate.set({name: newName, id: newName, email: newEmail, github: newGithub})
+    students = new StudentCollection()
+    students.add(newClassmate)
+    var newView = new CompleteDirectoryView ({model: newClassmate});
+    newClassmate.save()
+
+    $('input').val('');
+  }
+
+});
+
 // EditStudentView = Backbone.View.extend({
   
 //   template: _.template( $('#edit-template').text() ),
