@@ -35,8 +35,49 @@
                 <div class="text-muted">IronYard</div> 
                 <img src="https://github.com/tylerphillips/studdir/blob/master/app/images/IrYdLogo.png?raw=true" class="ironyardlogo">
                 <div class="head-student">Student</div>  
-                <p class="directory">Directory</p>        
+                <p class="directory">Directory</p>     
+
+
             </div>
+
+            <div class="homework">
+                <div class="homework">
+                
+                 <form id="contact-form" action="/" method="post">
+                    <h3>Add New Student</h3>
+                    <div>
+                        <label>
+                            <span>Name: (required)</span>
+                            <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Email: (required)</span>
+                            <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Github: (required)</span>
+                            <input placeholder="Begin with http://" type="url" tabindex="4" required>
+                        </label>
+                    </div>
+                    <div>
+                        <button name="submit" type="submit" id="contact-submit">Add</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Upload Photo</label>
+                        <input type="file" id="exampleInputFile">
+                        <!-- <p class="help-block">Example block-level help text here.</p> -->
+                    </div>
+                </form>
+                </div>
+                
+                </div>       
+            </div>
+
+            
 
 
              <!-- <div class="jumbotron">
@@ -47,16 +88,8 @@
             <!-- <input id="add-input" placeholder="Add New Student"> -->
 
 
-            <div class="homework">
-                <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
             
-            </div>       
-        </div>
-        
+
         <!-- Grid View Template -->
         <script type="text/template" id="grid-template">
             <a href="#/students/<%= student.get('id') %>">
@@ -82,6 +115,43 @@
             <button type="submit" id="btn btn-default edit">Edit</button>
             <button type="submit" id="btn btn-default delete">Delete</button>
         </script>
+
+        <!-- <div class="homework">
+                <div class="homework">
+                
+                 <form id="contact-form" action="/" method="post">
+                    <h3>Add New Student</h3>
+                    <div>
+                        <label>
+                            <span>Name: (required)</span>
+                            <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Email: (required)</span>
+                            <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Github: (required)</span>
+                            <input placeholder="Begin with http://" type="url" tabindex="4" required>
+                        </label>
+                    </div>
+                    <div>
+                        <button name="submit" type="submit" id="contact-submit">Add</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Upload Photo</label>
+                        <input type="file" id="exampleInputFile">
+                        <!-- <p class="help-block">Example block-level help text here.</p> -->
+                    </div>
+                </form>
+            </div>
+            
+            </div>       
+        </div> -->
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

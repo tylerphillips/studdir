@@ -264,12 +264,13 @@ h2 {
 
 .student-full {
     background-color: #517051;
+    // background: #3F463F;
     border: solid 3px rgb(243, 146, 0);
 }
 .full-header {
     font-family: 'Days One', sans-serif;
     background-color: rgb(243, 146, 0);
-    color: #517051;
+    color: #3F463F;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     box-shadow: inset 4px 4px white, inset -4px -4px white, inset 4px -4px white, 0px 0px white;
     border: solid;
@@ -305,6 +306,23 @@ h2 {
     margin-top: 15px;
 }
 
+#contact-form {
+    text-align: center;
+    background: #3F463F;
+    width: 310px;
+    position: relative;
+    left: 187px;
+    color: #F1EFEA;
+    border: solid 5px #f39200;
+}
+#exampleInputFile {
+    position: relative;
+    left: 65px;
+}
+
+a{
+    color: #f39200;
+}
 
 
 

@@ -62,6 +62,8 @@ FullStudentView = Backbone.View.extend({
 
 });
 
+
+
 AddPersonView = Backbone.View.extend({
   addTemplate: _.template($('#add-template').text()),
 
@@ -96,6 +98,35 @@ AddPersonView = Backbone.View.extend({
     $('input').val('');
   }
 
+});
+
+EditView = Backbone.View.extend({
+  template: _.template( $('#edit-view').html() ),
+
+  events: {
+    'click .btn-success'    :  'save'
+  },
+
+  className: 'individual-student',
+
+  initialize: function() {
+    $('.wrapper').append(this.el);
+    this.render();
+  },
+
+  save: function() {
+    $('.btn-success').click(function(){
+      this.model.set('firstName', $('input#first-name').val());
+      this.model.set('lastName', $('input#last-name').val());
+      this.model.set('email', $('input#email').val());
+      this.model.set('github', $('input#github').val());
+    });
+  },
+
+  render: function() {
+    $('.individual-student').html('');
+    this.$el.append(this.template({student: this.model}) );
+  }
 });
 
 // EditStudentView = Backbone.View.extend({
